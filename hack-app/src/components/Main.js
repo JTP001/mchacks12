@@ -8,7 +8,8 @@ function Main() {
         <Fragment>
             <Routes>
                 <Route path='/' element={<Home />} />
-                <Route path='/games' element={<Games />} />
+                <Route path='/mchacks12/' element={<Home />} />
+                <Route path='/mchacks12/games/' element={<Games />} />
             </Routes>
         </Fragment>
     );

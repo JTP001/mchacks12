@@ -8,8 +8,8 @@ function MyNavbar() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Row>
-              <Col><Link to="/"><Button variant="success">Home</Button></Link></Col>
-              <Col><Link to="/games"><Button variant="success">Games</Button></Link></Col>
+              <Col><Link to="/mchacks12/"><Button variant="success">Home</Button></Link></Col>
+              <Col><Link to="/mchacks12/games/"><Button variant="success">Games</Button></Link></Col>
             </Row>
           </Navbar.Collapse>
           <br/>
