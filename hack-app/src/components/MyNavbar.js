@@ -1,4 +1,5 @@
-import { Button, Navbar, Nav, Container } from 'react-bootstrap'
+import { Button, Navbar, Container, Row, Col } from 'react-bootstrap'
+import { Link } from 'react-router-dom';
 
 function MyNavbar() {
     return (
@@ -6,10 +7,14 @@ function MyNavbar() {
         <Container>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav.Link href="">Home</Nav.Link>
+            <Row>
+              <Col><Link to="/mchacks12/"><Button variant="success">Home</Button></Link></Col>
+              <Col><Link to="/mchacks12/games/"><Button variant="success">Games</Button></Link></Col>
+            </Row>
           </Navbar.Collapse>
+          <br/>
+          <br/>
         </Container>
-        
       </Navbar>
     );
 }
