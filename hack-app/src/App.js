@@ -10,7 +10,7 @@ function App() {
     <Fragment>
       <MyNavbar />
       <h1>
-        McHacks 12 group projectt
+        McHacks 12 group project
       </h1>
 
       <p>This website is currently unfinished.</p>
