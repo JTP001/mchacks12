@@ -58,24 +58,36 @@ function Home() {
                             <Card.Title className="mb-4 text-center">
                                 Current Ticket Queue
                             </Card.Title>
-                            {loading ? (
-                                <div className="d-flex justify-content-center">
-                                    <Spinner animation="border" variant="light" />
-                                </div>
-                            ) : queue.length > 0 ? (
-                                <ListGroup className="text-dark">
-                                    {queue.map((ticket, index) => (
-                                        <ListGroup.Item
-                                            key={index}
-                                            className="text-white bg-primary border-0"
-                                        >
-                                            Ticket #{ticket}
-                                        </ListGroup.Item>
-                                    ))}
-                                </ListGroup>
-                            ) : (
-                                <p className="text-center">No tickets in the queue.</p>
-                            )}
+                            <div
+                                style={{
+                                    maxHeight: "200px", // Fixed height for the queue box
+                                    overflowY: "auto", // Enable vertical scrolling
+                                    border: "1px solid rgba(255, 255, 255, 0.6)",
+                                    borderRadius: "8px",
+                                    padding: "10px",
+                                }}
+                            >
+                                {loading ? (
+                                    <div className="d-flex justify-content-center">
+                                        <Spinner animation="border" variant="light" />
+                                    </div>
+                                ) : queue.length > 0 ? (
+                                    <ListGroup>
+                                        {queue.map((ticket, index) => (
+                                            <ListGroup.Item
+                                                key={index}
+                                                className="bg-transparent text-white border-0"
+                                            >
+                                                Ticket #{ticket}
+                                            </ListGroup.Item>
+                                        ))}
+                                    </ListGroup>
+                                ) : (
+                                    <p className="text-center text-white">
+                                        No tickets in the queue.
+                                    </p>
+                                )}
+                            </div>
                         </Card.Body>
                     </Card>
                 </Col>
@@ -87,7 +99,7 @@ function Home() {
                     <Card className="shadow bg-transparent text-white border-light">
                         <Card.Body>
                             <Card.Title className="mb-4 text-center">
-                                Tell us how you're feeling
+                                Add Notes
                             </Card.Title>
                             <InputBox />
                         </Card.Body>
