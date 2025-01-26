@@ -1,7 +1,7 @@
 import React from "react";
 import { Fragment } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import backgroundImage from "./index.jpg";
+import backgroundImage from "./bg.jpg";
 
 function Games() {
     return (
