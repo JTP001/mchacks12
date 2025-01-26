@@ -11,7 +11,7 @@ function MyNavbar() {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ml-auto" style={{ gap: '20px' }}>
                         <NavLink
-                            to="/"
+                            to="/mchacks12/"
                             className="nav-link"
                             style={({ isActive }) => ({
                                 color: isActive ? '#ffcc00' : '#ffffff',
