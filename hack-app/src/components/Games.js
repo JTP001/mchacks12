@@ -62,28 +62,7 @@ function Games() {
                     </Col>
                     <Col>
                         <iframe
-                            src="https://cloud.onlinegames.io/games/2024/construct/219/stickman-parkour/index-og.html"
-                            width="100%"
-                            height="100%"
-                            style={{ border: 'none' }}
-                            title="Stickman Parkour Game 1"
-                        ></iframe>
-                    </Col>
-                </Row>
-                <br />
-                <Row className="h-50">
-                    <Col>
-                        <iframe
-                            src="https://cloud.onlinegames.io/games/2024/construct/219/stickman-parkour/index-og.html"
-                            width="100%"
-                            height="100%"
-                            style={{ border: 'none' }}
-                            title="Stickman Parkour Game 1"
-                        ></iframe>
-                    </Col>
-                    <Col>
-                        <iframe
-                            src="https://cloud.onlinegames.io/games/2024/construct/219/stickman-parkour/index-og.html"
+                            src="https://cloud.onlinegames.io/games/2024/construct/311/basket-hoop/index-og.html"
                             width="100%"
                             height="100%"
                             style={{ border: 'none' }}
