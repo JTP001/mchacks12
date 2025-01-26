@@ -49,21 +49,28 @@ function InputBox() {
           padding: "10px", // Padding for better spacing
         }}
       />
-      <br />
-      <button
-        onClick={handleSave}
+      <div
         style={{
-          padding: "10px 20px",
-          cursor: "pointer",
-          backgroundColor: "#004b8d", // Match the theme color
-          color: "#fff", // Button text color
-          border: "none", // Remove button border
-          borderRadius: "5px", // Rounded corners
-          fontWeight: "bold",
+          display: "flex",
+          justifyContent: "center", // Center horizontally
+          marginTop: "10px",
         }}
       >
-        Save Text
-      </button>
+        <button
+          onClick={handleSave}
+          style={{
+            padding: "10px 20px",
+            cursor: "pointer",
+            backgroundColor: "#004b8d", // Match the theme color
+            color: "#fff", // Button text color
+            border: "none", // Remove button border
+            borderRadius: "5px", // Rounded corners
+            fontWeight: "bold",
+          }}
+        >
+          Send text
+        </button>
+      </div>
     </div>
   );
 }

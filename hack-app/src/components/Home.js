@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { Container, Row, Col, Card, ListGroup, Spinner } from "react-bootstrap";
+import { Container, Row, Col, Card, ListGroup, Spinner, Button } from "react-bootstrap";
 import InputBox from "./InputBox";
 
 function Home() {
@@ -17,6 +17,11 @@ function Home() {
         } finally {
             setLoading(false);
         }
+    };
+
+    // Handle emergency button press
+    const handleEmergency = () => {
+        alert("Emergency button pressed! A nurse will be with you shortly.");
     };
 
     // Fetch the queue when the component loads
@@ -47,6 +52,27 @@ function Home() {
                     <p className="lead">
                         A professional ticketing and queue management solution.
                     </p>
+                </Col>
+            </Row>
+
+            {/* Emergency Button Section */}
+            <Row className="w-100 justify-content-center mb-4">
+                <Col xs={12} md={8} lg={6} className="text-center">
+                    <Button
+                        variant="danger"
+                        size="lg"
+                        className="w-100"
+                        style={{
+                            fontWeight: "bold",
+                            fontSize: "24px",
+                            padding: "15px",
+                            borderRadius: "8px",
+                            boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+                        }}
+                        onClick={handleEmergency}
+                    >
+                        EMERGENCY
+                    </Button>
                 </Col>
             </Row>
 
@@ -99,7 +125,7 @@ function Home() {
                     <Card className="shadow bg-transparent text-white border-light">
                         <Card.Body>
                             <Card.Title className="mb-4 text-center">
-                                Add Notes
+                                Let us know how you feel
                             </Card.Title>
                             <InputBox />
                         </Card.Body>
